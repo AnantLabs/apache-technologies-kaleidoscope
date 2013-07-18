@@ -1,0 +1,552 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{42878F6C-F804-44E0-A512-40E74F0594E4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Kaleidoscope</RootNamespace>
+    <AssemblyName>Kaleidoscope</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>apache32x32.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Kaleidoscope.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dlg\dlgSample.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\dlgSample.designer.cs">
+      <DependentUpon>dlgSample.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Dyadic\dlgCompareResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Dyadic\dlgCompareResult.designer.cs">
+      <DependentUpon>dlgCompareResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Dyadic\dlgStereoImaging.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Dyadic\dlgStereoImaging.designer.cs">
+      <DependentUpon>dlgStereoImaging.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Dyadic\dlgLogic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Dyadic\dlgLogic.designer.cs">
+      <DependentUpon>dlgLogic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Dyadic\dlgDyadic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Dyadic\dlgDyadic.designer.cs">
+      <DependentUpon>dlgDyadic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Features\dlgFuzzySegment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Features\dlgFuzzySegment.designer.cs">
+      <DependentUpon>dlgFuzzySegment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Features\dlgGeometricResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Features\dlgGeometricResult.designer.cs">
+      <DependentUpon>dlgGeometricResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Features\dlgMoments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Features\dlgMoments.designer.cs">
+      <DependentUpon>dlgMoments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Features\dlgRegionOutlineResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Features\dlgRegionOutlineResult.designer.cs">
+      <DependentUpon>dlgRegionOutlineResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Features\dlgKMeans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Features\dlgKMeans.designer.cs">
+      <DependentUpon>dlgKMeans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Features\dlgRegionOutline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Features\dlgRegionOutline.designer.cs">
+      <DependentUpon>dlgRegionOutline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Features\dlgPostBlobOutput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Features\dlgPostBlobOutput.designer.cs">
+      <DependentUpon>dlgPostBlobOutput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Features\dlgCanny.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Features\dlgCanny.designer.cs">
+      <DependentUpon>dlgCanny.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Features\dlgGlobalThreshold.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Features\dlgGlobalThreshold.designer.cs">
+      <DependentUpon>dlgGlobalThreshold.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Features\dlgRegionType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Features\dlgRegionType.designer.cs">
+      <DependentUpon>dlgRegionType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Features\dlgPostBlob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Features\dlgPostBlob.designer.cs">
+      <DependentUpon>dlgPostBlob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\File\dlgProperties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\File\dlgProperties.designer.cs">
+      <DependentUpon>dlgProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Morphology\dlgSizeFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Morphology\dlgSizeFilter.designer.cs">
+      <DependentUpon>dlgSizeFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Morphology\dlgShapeFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Morphology\dlgShapeFilter.designer.cs">
+      <DependentUpon>dlgShapeFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Morphology\dlgFormFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Morphology\dlgFormFilter.designer.cs">
+      <DependentUpon>dlgFormFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Morphology\dlgPerimeterFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Morphology\dlgPerimeterFilter.designer.cs">
+      <DependentUpon>dlgPerimeterFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Morphology\dlgRegionSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Morphology\dlgRegionSelection.designer.cs">
+      <DependentUpon>dlgRegionSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Patterns\dlgAngle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Patterns\dlgAngle.designer.cs">
+      <DependentUpon>dlgAngle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Patterns\dlgBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Patterns\dlgBar.designer.cs">
+      <DependentUpon>dlgBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Patterns\dlgChequer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Patterns\dlgChequer.designer.cs">
+      <DependentUpon>dlgChequer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Patterns\dlgConstant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Patterns\dlgConstant.designer.cs">
+      <DependentUpon>dlgConstant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Patterns\dlgDisk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Patterns\dlgDisk.designer.cs">
+      <DependentUpon>dlgDisk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Patterns\dlgNoise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Patterns\dlgNoise.designer.cs">
+      <DependentUpon>dlgNoise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Patterns\dlgPolygon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Patterns\dlgPolygon.designer.cs">
+      <DependentUpon>dlgPolygon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Patterns\dlgSine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Patterns\dlgSine.designer.cs">
+      <DependentUpon>dlgSine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Process\dlgRadialHistogram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Process\dlgRadialHistogram.designer.cs">
+      <DependentUpon>dlgRadialHistogram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Process\dlgHistograph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Process\dlgHistograph.designer.cs">
+      <DependentUpon>dlgHistograph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Process\dlgPseudocolor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Process\dlgPseudocolor.designer.cs">
+      <DependentUpon>dlgPseudocolor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Process\dlgAnnotate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Process\dlgAnnotate.designer.cs">
+      <DependentUpon>dlgAnnotate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Process\dlgBand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Process\dlgBand.designer.cs">
+      <DependentUpon>dlgBand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Process\dlgContrastStretch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Process\dlgContrastStretch.designer.cs">
+      <DependentUpon>dlgContrastStretch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Process\dlgConvolve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Process\dlgConvolve.designer.cs">
+      <DependentUpon>dlgConvolve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Process\dlgFilterLogic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Process\dlgFilterLogic.designer.cs">
+      <DependentUpon>dlgFilterLogic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Process\dlgHistogramExpansion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Process\dlgHistogramExpansion.designer.cs">
+      <DependentUpon>dlgHistogramExpansion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Process\dlgHistogramRamp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Process\dlgHistogramRamp.designer.cs">
+      <DependentUpon>dlgHistogramRamp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Process\dlgIntensity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Process\dlgIntensity.designer.cs">
+      <DependentUpon>dlgIntensity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Process\dlgResize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Process\dlgResize.designer.cs">
+      <DependentUpon>dlgResize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Process\dlgLinear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Process\dlgLinear.designer.cs">
+      <DependentUpon>dlgLinear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Process\dlgMaskLogic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Process\dlgMaskLogic.designer.cs">
+      <DependentUpon>dlgMaskLogic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Process\dlgMosaic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Process\dlgMosaic.designer.cs">
+      <DependentUpon>dlgMosaic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Process\dlgSingleSlider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Process\dlgSingleSlider.designer.cs">
+      <DependentUpon>dlgSingleSlider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAboutUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAboutUs.designer.cs">
+      <DependentUpon>frmAboutUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsole.Designer.cs">
+      <DependentUpon>frmConsole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImageView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Misc\RegistryAccess.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="frmGraphView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGraphView.designer.cs">
+      <DependentUpon>frmGraphView.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Dlg\dlgSample.resx">
+      <DependentUpon>dlgSample.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Dyadic\dlgCompareResult.resx">
+      <DependentUpon>dlgCompareResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Dyadic\dlgStereoImaging.resx">
+      <DependentUpon>dlgStereoImaging.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Dyadic\dlgLogic.resx">
+      <DependentUpon>dlgLogic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Dyadic\dlgDyadic.resx">
+      <DependentUpon>dlgDyadic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Features\dlgFuzzySegment.resx">
+      <DependentUpon>dlgFuzzySegment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Features\dlgGeometricResult.resx">
+      <DependentUpon>dlgGeometricResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Features\dlgMoments.resx">
+      <DependentUpon>dlgMoments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Features\dlgRegionOutlineResult.resx">
+      <DependentUpon>dlgRegionOutlineResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Features\dlgKMeans.resx">
+      <DependentUpon>dlgKMeans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Features\dlgRegionOutline.resx">
+      <DependentUpon>dlgRegionOutline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Features\dlgPostBlobOutput.resx">
+      <DependentUpon>dlgPostBlobOutput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Features\dlgCanny.resx">
+      <DependentUpon>dlgCanny.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Features\dlgGlobalThreshold.resx">
+      <DependentUpon>dlgGlobalThreshold.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Features\dlgRegionType.resx">
+      <DependentUpon>dlgRegionType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Features\dlgPostBlob.resx">
+      <DependentUpon>dlgPostBlob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\File\dlgProperties.resx">
+      <DependentUpon>dlgProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Morphology\dlgSizeFilter.resx">
+      <DependentUpon>dlgSizeFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Morphology\dlgShapeFilter.resx">
+      <DependentUpon>dlgShapeFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Morphology\dlgFormFilter.resx">
+      <DependentUpon>dlgFormFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Morphology\dlgPerimeterFilter.resx">
+      <DependentUpon>dlgPerimeterFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Morphology\dlgRegionSelection.resx">
+      <DependentUpon>dlgRegionSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Patterns\dlgAngle.resx">
+      <DependentUpon>dlgAngle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Patterns\dlgBar.resx">
+      <DependentUpon>dlgBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Patterns\dlgChequer.resx">
+      <DependentUpon>dlgChequer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Patterns\dlgConstant.resx">
+      <DependentUpon>dlgConstant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Patterns\dlgDisk.resx">
+      <DependentUpon>dlgDisk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Patterns\dlgNoise.resx">
+      <DependentUpon>dlgNoise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Patterns\dlgPolygon.resx">
+      <DependentUpon>dlgPolygon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Patterns\dlgSine.resx">
+      <DependentUpon>dlgSine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Process\dlgRadialHistogram.resx">
+      <DependentUpon>dlgRadialHistogram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Process\dlgHistograph.resx">
+      <DependentUpon>dlgHistograph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Process\dlgPseudocolor.resx">
+      <DependentUpon>dlgPseudocolor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Process\dlgAnnotate.resx">
+      <DependentUpon>dlgAnnotate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Process\dlgBand.resx">
+      <DependentUpon>dlgBand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Process\dlgContrastStretch.resx">
+      <DependentUpon>dlgContrastStretch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Process\dlgConvolve.resx">
+      <DependentUpon>dlgConvolve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Process\dlgFilterLogic.resx">
+      <DependentUpon>dlgFilterLogic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Process\dlgHistogramExpansion.resx">
+      <DependentUpon>dlgHistogramExpansion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Process\dlgHistogramRamp.resx">
+      <DependentUpon>dlgHistogramRamp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Process\dlgIntensity.resx">
+      <DependentUpon>dlgIntensity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Process\dlgResize.resx">
+      <DependentUpon>dlgResize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Process\dlgLinear.resx">
+      <DependentUpon>dlgLinear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Process\dlgMaskLogic.resx">
+      <DependentUpon>dlgMaskLogic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Process\dlgMosaic.resx">
+      <DependentUpon>dlgMosaic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Process\dlgSingleSlider.resx">
+      <DependentUpon>dlgSingleSlider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAboutUs.resx">
+      <DependentUpon>frmAboutUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsole.resx">
+      <DependentUpon>frmConsole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImageView.resx">
+      <DependentUpon>frmImageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="frmGraphView.resx">
+      <DependentUpon>frmGraphView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="apache32x32.ico" />
+    <Content Include="Res\apache32x32.ico" />
+    <Content Include="Res\view.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ApacheImageLib\ApacheImageLib.csproj">
+      <Project>{36080062-38E4-4E8A-BEB8-2DB34375C749}</Project>
+      <Name>ApacheImageLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
