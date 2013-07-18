@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kaleidoscope", "Console\Kaleidoscope.csproj", "{42878F6C-F804-44E0-A512-40E74F0594E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApacheImageLib", "ApacheImageLib\ApacheImageLib.csproj", "{36080062-38E4-4E8A-BEB8-2DB34375C749}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "..\AForge.NET Framework-2.2.4\Sources\Core\Core.csproj", "{631AC093-430F-45F4-BA0C-AF0F0405918A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controls", "..\AForge.NET Framework-2.2.4\Sources\Controls\Controls.csproj", "{4CCA6844-9102-4A3B-8148-EA3D359B2586}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Math", "..\AForge.NET Framework-2.2.4\Sources\Math\Math.csproj", "{C0FAF524-72E4-46F7-8C1B-A6B74DEC5EBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Imaging", "..\AForge.NET Framework-2.2.4\Sources\Imaging\Imaging.csproj", "{C6A8B9AE-0749-41C7-8FF9-02C156696F45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Video", "..\AForge.NET Framework-2.2.4\Sources\Video\Video.csproj", "{809725DC-6502-4732-A51C-DEB7FEA12975}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Installer", "Installer\Installer.vdproj", "{AE8E69D1-98BA-43A5-B3FE-70FCF5223079}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42878F6C-F804-44E0-A512-40E74F0594E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42878F6C-F804-44E0-A512-40E74F0594E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42878F6C-F804-44E0-A512-40E74F0594E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42878F6C-F804-44E0-A512-40E74F0594E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36080062-38E4-4E8A-BEB8-2DB34375C749}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36080062-38E4-4E8A-BEB8-2DB34375C749}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36080062-38E4-4E8A-BEB8-2DB34375C749}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36080062-38E4-4E8A-BEB8-2DB34375C749}.Release|Any CPU.Build.0 = Release|Any CPU
+		{631AC093-430F-45F4-BA0C-AF0F0405918A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{631AC093-430F-45F4-BA0C-AF0F0405918A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{631AC093-430F-45F4-BA0C-AF0F0405918A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{631AC093-430F-45F4-BA0C-AF0F0405918A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CCA6844-9102-4A3B-8148-EA3D359B2586}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CCA6844-9102-4A3B-8148-EA3D359B2586}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CCA6844-9102-4A3B-8148-EA3D359B2586}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CCA6844-9102-4A3B-8148-EA3D359B2586}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0FAF524-72E4-46F7-8C1B-A6B74DEC5EBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0FAF524-72E4-46F7-8C1B-A6B74DEC5EBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0FAF524-72E4-46F7-8C1B-A6B74DEC5EBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0FAF524-72E4-46F7-8C1B-A6B74DEC5EBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6A8B9AE-0749-41C7-8FF9-02C156696F45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6A8B9AE-0749-41C7-8FF9-02C156696F45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6A8B9AE-0749-41C7-8FF9-02C156696F45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6A8B9AE-0749-41C7-8FF9-02C156696F45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{809725DC-6502-4732-A51C-DEB7FEA12975}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{809725DC-6502-4732-A51C-DEB7FEA12975}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{809725DC-6502-4732-A51C-DEB7FEA12975}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{809725DC-6502-4732-A51C-DEB7FEA12975}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE8E69D1-98BA-43A5-B3FE-70FCF5223079}.Debug|Any CPU.ActiveCfg = Debug
+		{AE8E69D1-98BA-43A5-B3FE-70FCF5223079}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
